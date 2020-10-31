@@ -1,0 +1,70 @@
+{
+  "name": "vuetify-date-selection",
+  "version": "0.0.1",
+  "private": false,
+  "main": "dist/v-date-selection.common.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name v-date-selection ./src/components/index.js"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vuetify": "~2.3.16"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "deepmerge": "~4.2.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "sass": "~1.28.0",
+    "sass-loader": "~10.0.4",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "description": "Simple date input selection with two date-picker based on Vuetify",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BBitwolf/Vuetify-Date-Selection.git"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+  ],
+  "keywords": [
+    "Vuetify",
+    "Date",
+    "Picker"
+    "Range"
+    "Selection"
+  ],
+  "author": "BBitwolf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BBitwolf/Vuetify-Date-Selection/issues"
+  },
+  "homepage": "https://github.com/BBitwolf/Vuetify-Date-Selection#readme"
+}
