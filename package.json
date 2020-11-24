@@ -1,8 +1,8 @@
 {
   "name": "vuetify-date-selection",
-  "version": "0.0.1",
-  "private": false,
+  "version": "0.0.2",
   "main": "dist/v-date-selection.common.js",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -52,13 +52,13 @@
   },
   "files": [
     "dist/*",
-    "src/*",
+    "src/*"
   ],
   "keywords": [
     "Vuetify",
     "Date",
-    "Picker"
-    "Range"
+    "Picker",
+    "Range",
     "Selection"
   ],
   "author": "BBitwolf",

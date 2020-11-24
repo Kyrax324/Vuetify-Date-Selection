@@ -112,14 +112,19 @@ export default {
 		value:{
 			handler(val){
 				if(Array.isArray(val) && val.length <= 2){
-					[this.start_date, this.end_date] = val
+					this.$nextTick(()=>{
+						[this.start_date, this.end_date] = val
+						this.end_min = this.start_date
+					})
 				}
 			},
+            immediate : true,
 		},
 		range:{
 			handler(val){
 				if(!val){
 					this.end_date = null
+					this.$emit('input',[this.start_date])
 				}
 			}
 		}
@@ -145,7 +150,6 @@ export default {
 	},
 	methods: {
 		input_start(){
-			console.log(this.start_date)
 			this.end_min = this.start_date
 			this.$emit('input',[this.start_date])
 			if(this.start_date > this.end_date){
@@ -153,7 +157,6 @@ export default {
 			}
 		},
 		input_end(){
-			console.log("input_end")
 			this.$emit('input',[this.start_date, this.end_date] )
 		},
 		addDays(currentDate,days){
