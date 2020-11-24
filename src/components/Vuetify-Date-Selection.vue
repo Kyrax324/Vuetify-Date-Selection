@@ -151,7 +151,7 @@ export default {
 	methods: {
 		input_start(){
 			this.end_min = this.start_date
-			this.$emit('input',[this.start_date])
+			this.$emit('input',(this.range && this.end_date) ? [this.start_date, this.end_date] : [this.start_date])
 			if(this.start_date > this.end_date){
 				this.end_date = null
 			}

@@ -1,6 +1,6 @@
 {
   "name": "vuetify-date-selection",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/v-date-selection.common.js",
   "private": false,
   "scripts": {
